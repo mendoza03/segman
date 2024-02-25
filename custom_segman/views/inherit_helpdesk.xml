@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record id="helpdesk_form_view_inherit_segman" model="ir.ui.view">
+            <field name="name">helpdesk.form.view.inherit.segman</field>
+            <field name="model">helpdesk.ticket</field>
+            <field name="inherit_id" ref="helpdesk.helpdesk_ticket_view_form"/>
+            <field name="arch" type="xml">
+<!--                agregar campos en vista formulario lado izquierdo-->
+                <xpath expr="//field[@name='tag_ids']" position="after">
+                    <field name="area"/>
+                    <field name="engineer"/>
+                    <field name="series"/>
+                    <field name="model"/>
+                    <field name="location"/>
+                </xpath>
+<!--                agregar campos en vista formulario lado derecho-->
+                <xpath expr="//field[@name='email_cc']" position="after">
+                    <field name="state_final"/>
+                    <field name="actions"/>
+                    <field name="arrival_date"/>
+                    <field name="arrival_hour"/>
+                    <field name="time_arrival" readonly="1"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

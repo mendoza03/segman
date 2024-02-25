@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+custom_segman.access_area_segman,access_area_segman,custom_segman.model_area_segman,base.group_user,1,1,1,1
+custom_segman.access_engineer_segman,access_engineer_segman,custom_segman.model_engineer_segman,base.group_user,1,1,1,1
