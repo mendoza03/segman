@@ -18,7 +18,6 @@
                 <xpath expr="//field[@name='email_cc']" position="after">
                     <field name="state_final"/>
                     <field name="actions"/>
-                    <field name="arrival_date"/>
                     <field name="arrival_hour"/>
                     <field name="time_arrival" readonly="1"/>
                 </xpath>
